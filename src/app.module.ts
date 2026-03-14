@@ -11,6 +11,9 @@ import { EmailModule } from "./common/email/email.module";
 import { RoomsModule } from './modules/rooms/rooms.module';
 import { CoursesModule } from './modules/courses/courses.module';
 import { GroupsModule } from './modules/groups/groups.module';
+import { LessonsModule } from './modules/lessons/lessons.module';
+import { AttendanceModule } from './modules/attendance/attendance.module';
+import { HomeworkModule } from './modules/homework/homework.module';
 
 
 
@@ -20,7 +23,7 @@ import { GroupsModule } from './modules/groups/groups.module';
   }),ServeStaticModule.forRoot({
     rootPath:join(process.cwd(),"src","uploads"),
     serveRoot:"/files"
-  }),PrismaModule, AuthModule, UsersModule, StudentsModule, TeachersModule,EmailModule, RoomsModule, CoursesModule, GroupsModule],
+  }),PrismaModule, AuthModule, UsersModule, StudentsModule, TeachersModule,EmailModule, RoomsModule, CoursesModule, GroupsModule, LessonsModule, AttendanceModule, HomeworkModule],
 
 
 })

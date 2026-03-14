@@ -45,8 +45,8 @@ export class CreateGroupDto {
                 "SUNDAY"
             ] })
     @IsArray()
-    @Type(() => String)   // JSON string → array
-    week_day: string[];
+      // JSON string → array
+    week_day: WeekDay[];
 
     @ApiProperty()
     @IsString()

@@ -65,7 +65,7 @@ export class GroupsService {
         let end_minut_newGroup= Number(payload.start_time.split(":")[0])*60+Number(payload.start_time.split(':')[1])+Number(existRoomCourse[0].duration_hours)*60
         let newGroupWeekDays=payload.week_day
         const busyRooms=existRoomGroups.map(el=>{
-            let oldGroupWeekDays = el.week_day as string[]
+            let oldGroupWeekDays = el.week_day 
         
             let chechDays= oldGroupWeekDays.filter(day=>newGroupWeekDays.includes(day))
             if(chechDays.length===0) return
